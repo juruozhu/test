@@ -1,19 +1,4 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<body>
-    <h1 class="title">欢迎</h1>
-    <p> 
-        账号 
-        <input type="text">
-    </p>
-    <p>
-        密码
-        <input type="password">
-    </p>
-    <button title="真爆吗？" class="boom">自爆</button>
-    <button title="按了也没反应，嘿嘿" class="boom">注册</button>
-</body>
-</html>
 <head>
     <meta charset="UTF-8">
     <title>Texting</title>
@@ -36,4 +21,25 @@
             background-color: black;
         }
     </style>
+    <script>
+        function tolink(url) {
+            window.location.href = url;
+        }
+    </script>
 </head>
+<html lang="zh-CN">
+<body>
+    <h1 class="title">欢迎</h1>
+    <p> 
+        账号 
+        <input type="text">
+    </p>
+    <p>
+        密码
+        <input type="password">
+    </p>
+    <button title="真爆吗？" class="boom">自爆</button>
+    <button title="按了也没反应，嘿嘿" class="boom">注册</button>
+    <button class="boom" onclick="tolink('https://www.luogu.com.cn')">要不你试试去洛谷看看？</button>
+</body>
+</html>
