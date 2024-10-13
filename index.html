@@ -25,21 +25,37 @@
         function tolink(url) {
             window.location.href = url;
         }
+        let 跳转到=tolink;
+        function signin()
+        {
+            let account=document.querySelector(".account_input");
+            let password=document.querySelector(".password_input");
+            let avalue=account.value.trim();
+            let pvalue=password.value.trim();
+            if(avalue && pvalue) 
+            {
+                alert("注册成功");
+            }
+            else
+            {
+                alert("账号或密码不能为空");
+            }
+        }
     </script>
 </head>
 <html lang="zh-CN">
 <body>
     <h1 class="title">欢迎</h1>
     <p> 
-        账号 
-        <input type="text">
+        账号：
+        <input type="text" class="account_input">
     </p>
     <p>
-        密码
-        <input type="password">
+        密码：
+        <input type="password" class="password_input">
     </p>
-    <button title="真爆吗？" class="boom">自爆</button>
-    <button title="按了也没反应，嘿嘿" class="boom">注册</button>
-    <button class="boom" onclick="tolink('https://www.luogu.com.cn')">要不你试试去洛谷看看？</button>
+    <button title="真爆吗？" class="boom" onclick="alert('Boom!')">自爆</button>
+    <button title="按了也没反应，嘿嘿" class="boom" onclick="signin()">注册</button>
+    <button class="boom" onclick="跳转到('https://www.luogu.com.cn')">要不你试试去洛谷看看？</button>
 </body>
 </html>
